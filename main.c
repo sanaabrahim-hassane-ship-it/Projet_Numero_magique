@@ -10,12 +10,17 @@ int main()
 
 	srand(time(NULL));
 	random_number = rand() % 100 + 1;
-	
+
 	printf("Choisissez un nombre entre 1 et 100 :\n");
 	scanf("%d", &guessed_number);
-	
+
 	while (game_state)
 	{
+		if (guessed_number > random_number)
+		{
+			printf("C'est plus !\n");
+			scanf("%d", &guessed_number);
+		}
 	}
 	exit(0);
 }
