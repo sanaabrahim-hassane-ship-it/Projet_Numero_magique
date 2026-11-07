@@ -13,5 +13,9 @@ int main()
 	
 	printf("Choisissez un nombre entre 1 et 100 :\n");
 	scanf("%d", &guessed_number);
+	
+	while (game_state)
+	{
+	}
 	exit(0);
 }
