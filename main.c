@@ -26,6 +26,11 @@ int main()
 			printf("C'est plus !\n");
 			scanf("%d", &guessed_number);
 		}
+		else if (guessed_number == random_number)
+		{
+			printf("Gagné !\n");
+			game_state = false;
+		}
 	}
 	exit(0);
 }
