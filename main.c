@@ -18,7 +18,7 @@ int main()
 	{
 		if (guessed_number > random_number)
 		{
-			printf("C'est plus !\n");
+			printf("C'est moins !\n");
 			scanf("%d", &guessed_number);
 		}
 	}
