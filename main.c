@@ -21,6 +21,11 @@ int main()
 			printf("C'est moins !\n");
 			scanf("%d", &guessed_number);
 		}
+		else if (guessed_number < random_number)
+		{
+			printf("C'est plus !\n");
+			scanf("%d", &guessed_number);
+		}
 	}
 	exit(0);
 }
